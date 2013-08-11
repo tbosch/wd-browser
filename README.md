@@ -12,12 +12,13 @@ This allows to run webdriver.js tests in a browser without running a selenium se
 # Details
 
 * `grunt buildWebdriver` downloads and builds `lib/webdriver.js` and `lib/atoms.js`.
-* `lib/webdriver.js` is the webdriver.js build to be used in browsers
-* `lib/atoms.js` are the basic building blocks of every webdriver driver implementation.
-  This provides cross browser tools like triggering events (e.g. typing into text fields),
+* `lib/webdriver.js` is the webdriver.js build to be used in browsers (see https://code.google.com/p/selenium/wiki/WebDriverJs).
+* `lib/atoms.js` are the basic building blocks of every webdriver driver implementation
+  (see https://code.google.com/p/selenium/wiki/AutomationAtoms).
+  This provides cross browser tools from selenium like triggering events (e.g. typing into text fields),
   selecting elements, ...
 * `src/wd-browser.js` intercepts the backend calls from `webdriver.js` and implements them
-  using `lib/atoms.js`.
+  using `lib/atoms.js` (see https://code.google.com/p/selenium/wiki/JsonWireProtocol).
 
 # Status
 
